@@ -1,0 +1,22 @@
+
+{
+    "users":[
+    {
+      "nickname":"Dusan",
+      "score":15
+    },
+    {
+      "nickname":"Marko",
+      "score":11
+    },
+    {
+      "nickname":"Veljko",
+      "score":14
+    },
+    {
+      "nickname":"Stevan",
+      "score":19
+    }
+
+  ]
+}

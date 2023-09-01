@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Start</title>
+</head>
+<body>
+    <div class="container" id="pocetna">
+        <h1>Welcome to the Game!</h1>
+        <h3>Catch the Dot!</h3>
+        <input type="text" id="nickname" placeholder="Enter your nickname">
+        <button id="startButton" disabled>Start Game</button>
+    </div>
+    <div id="gameContainer" style="display: none;">
+        <div class="center-container">
+            <div id="timer"></div>
+            <div id="dot"></div>
+        </div>
+    </div>
+    <div class="container" id="gameResult" style="display: none;" title="Ouch">
+        <button id="showResultsButton">Prikazi rezultate</button>
+        <button id="searchScoreButton">Pretrazi korisnike</button>
+        <div id="searchUserInput" style="display: none;">
+            <input type="text" id="searchUser" placeholder="Unesite korisničko ime">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+    <div id="resultsContainer"></div>
+    <script src="./dist/bundle.js"></script>
+    <script src="pocetnaStrana.js"></script>
+</body>
+</html>

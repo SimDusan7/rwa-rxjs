@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+#gamecontainer{
+  display: none;
+}
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+button:disabled {
+  opacity: 0.6;
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#dot {
+  margin-top: 10px;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(110, 19, 19);
+  border-radius: 50%;
+  transition: all 0.6s ease-in-out;
+  text-align: center;
+  color: white;
+}
+
+#timer {
+  font-size: 60px;
+}
+#gameResult {
+  margin-top: 100px; /* Promenite ovo na odgovarajuću vrednost */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  
