@@ -39,9 +39,9 @@ function getUsers(): Observable<User[]> {
 
   return from(promise);
 }
-export function getUserByNickname(nickname: string): Observable<User | undefined> {
+export function getUserByNickname(nickname: string): Observable<User[]> {
   return getUsers().pipe(
-    map((users:User[]) => users.find(user => user.nickname === nickname))
+    map((users:User[]) => users.filter(user => user.nickname === nickname))
   );
 }
 function createSuggestion(){
@@ -58,7 +58,8 @@ function createSuggestion(){
     )
     .subscribe(user => {
       if (user) {
-        searchResultEl.textContent = `Pronađen korisnik: ${user.nickname}:${user.score}`;
+        const userString = user.map((user:User)=>`${user.nickname}:${user.score}`);
+        searchResultEl.textContent = `Pronađeni korisnici: ${userString.join(', ')}`;
       } else {
         searchResultEl.textContent = 'Korisnik nije pronađen';
       }

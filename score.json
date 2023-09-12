@@ -16,7 +16,22 @@
     {
       "nickname":"Stevan",
       "score":19
+    },
+    {
+      "nickname":"Dusan",
+      "score":13
+    },
+    {
+      "nickname":"Jovan",
+      "score":20
+    },
+    {
+      "nickname":"Petar",
+      "score":8
+    },
+    {
+      "nickname":"Kosta",
+      "score":7
     }
-
   ]
 }
